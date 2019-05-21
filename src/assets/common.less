@@ -1,0 +1,175 @@
+html,body,#app{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    background-color: #fff;
+}
+
+body {
+  font-size: .64rem; //16px
+}
+
+body,h1,h2,h3,h4,p,input,ul,div{
+    padding:0;
+    margin:0;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // text-align: center;
+  color: #333;
+}
+
+.container {
+  margin:  0 auto;
+  padding: 0 50px;
+}
+
+// @media (min-width: 768px) {
+//   .container {
+//       width: 750px;
+//   }
+// }
+
+// @media (min-width: 992px) {
+//   .container {
+//       width: 970px;
+//   }
+// }
+
+.clearfix {
+  clear: both;
+}
+
+.flex {
+  display:flex;
+}
+.flex1 {
+  flex: 1;
+}
+.flex2 {
+  flex: 2
+}
+.flex3 {
+  flex: 3
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.warning-text {
+  color: #FF7342;
+}
+
+// 自定义标题样式
+.custom-title {
+  display: inline-block;
+  font-size: .6rem;
+  font-weight:bold;
+  color:#222;
+  padding-left: .6rem;
+  border-left: 2px solid #1574FF;
+  margin: 1rem 0;
+}
+
+// 自定义按钮样式
+.custom-btn {
+  font-size: .72rem;
+  font-weight: 400;
+  width: 100%;
+  height: 2.4rem;
+  border: 0 none;
+  border-radius: .32rem;
+  cursor: pointer;
+  outline:none;
+  // background:rgba(21,116,255,1);
+  &.small-size {
+    height: 1.4rem;
+    font-size: .56rem;
+    border-radius: .2rem;
+  }
+  &.mini-size {
+    height: 1.2rem;
+    font-size: .52rem;
+    border-radius: .2rem;
+  }
+  &.dialog-size {
+    height: 1.84rem;
+    font-size: .64rem;
+  }
+  &:hover{
+      opacity: 0.75;
+  }
+  &.default-btn {
+    color: #1574FF;
+    border: 1px solid #1574FF;
+    background-color: #fff;
+  }
+  &.blue-btn {
+    color: #fff;
+    background-color: #1574FF;
+    box-shadow:0px 10px 20px 0px rgba(21,116,255,0.2);
+  }
+  &.red-btn {
+    color:rgba(255,115,66,1);
+    border:1px solid rgba(255, 115, 66, 1);
+    background-color: #fff;
+  }
+  &.disabled {
+    color:#ccc;
+    border-color:#ccc;
+    cursor: disabled;
+  }
+}
+
+.custom-dialog {
+  .el-dialog {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .el-dialog__header {
+    background-color: #1574FF;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .el-dialog__title {
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .el-dialog__headerbtn .el-dialog__close {
+      color: #fff;
+    }
+  }
+  .el-dialog__body, .el-dialog__footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .el-dialog__footer {
+    padding-bottom: 35px;
+  }
+}
